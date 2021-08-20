@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8";>
+        <title>color generator</title>
+        <link rel="stylesheet" type="text/css" href="css.css">
+        <style>
+           #bg
+           { background-color:rgb(0, 255, 234);
+           width:1515px;
+           height:500px;
+           border: 3px black ridge;
+           }
+        </style>
+    </head>
+    <body>
+        <div id="bg">
+            <p style= color:black</p>
+        </div>
+        <button id="intro"  style= color:rgb(255,51,0);>CHANGE COLOR</button>
+      
+<script>
+    
+    var a,b,c,d;
+        document.getElementById("intro").onclick=function()
+        {
+        a=Math.round(Math.random()*256);
+        b=Math.round(Math.random()*256);
+        c=Math.round(Math.random()*256);
+        d='rgb(' + a + ', ' + b + ', ' + c + ')';
+document.getElementById("bg").style.backgroundColor=d;
+
+        }
+
+</script>
+    </body>
+</html>
